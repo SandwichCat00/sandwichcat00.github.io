@@ -22,12 +22,12 @@
 
         let lineCount = 0;
         function generateSheesh() {
-            const maxLines = Math.ceil(window.innerHeight / 30);
-            const baseText = "e".repeat(100);
+            const maxLines = 15;
+            const baseText = "e".repeat(80);
 
             for (let i = 0; i < maxLines; i++) {
-                const text = i === maxLines - 1 ? baseText.substring(0, 73) + "sh" : i === 0 ? "sh" + baseText.substring(0, 73) : baseText;
-                createLineAnimation(text, i * 5);
+                const text = i === maxLines - 1 ? baseText.substring(0, 78) + "sh" : i === 0 ? "sh" + baseText.substring(0, 78) : baseText;
+                createLineAnimation(text, i * 0);
             }
 
             lineCount++;
