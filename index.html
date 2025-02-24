@@ -3,37 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheesh Animation</title>
-<link rel="stylesheet" href="style.css">
+    <title>Home</title>
 </head>
 <body>
-    <div class="sheesh-container" id="sheeshContainer"></div>
-
-    <script>
-        const container = document.getElementById("sheeshContainer");
-
-        function createLineAnimation(text, delay) {
-            const div = document.createElement("div");
-            div.textContent = text;
-            div.className = "sheesh-line";
-            div.style.animationDelay = `${delay}s`;
-            container.appendChild(div);
-        }
-
-        let lineCount = 0;
-        function generateSheesh() {
-            const maxLines = 15;
-            const baseText = "e".repeat(80);
-
-            for (let i = 0; i < maxLines; i++) {
-                const text = i === maxLines - 1 ? baseText.substring(0, 78) + "sh" : i === 0 ? "sh" + baseText.substring(0, 78) : baseText;
-                createLineAnimation(text, i * 5);
-            }
-
-            lineCount++;
-        }
-
-        generateSheesh();
-    </script>
+    <hi>
+    Kartik chomu
+</hi>
 </body>
 </html>
